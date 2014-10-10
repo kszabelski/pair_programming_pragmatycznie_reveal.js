@@ -81,10 +81,15 @@ body {
 	line-height: 1;
 }
 
-.reveal h1 { font-size: 3.77em; }
+.reveal h1 { font-size: 2.82em; }
+.reveal h2 { font-size: 1.73em;	}
+.reveal h3 { font-size: 1.36em;	}
+.reveal h4 { font-size: 1em;	}
+
+/*.reveal h1 { font-size: 3.77em; }
 .reveal h2 { font-size: 2.11em;	}
 .reveal h3 { font-size: 1.55em;	}
-.reveal h4 { font-size: 1em;	}
+.reveal h4 { font-size: 1em;	}*/
 
 
 /*********************************************
