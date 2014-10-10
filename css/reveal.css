@@ -79,6 +79,9 @@ body {
 
 	word-wrap: break-word;
 	line-height: 1;
+
+	/*by szabl*/
+	font-weight: bold;
 }
 
 .reveal h1 { font-size: 2.82em; }
