@@ -1,0 +1,14 @@
+#reveal .emphasizedElement {
+ 	font-weight: bold;
+ 	font-size: 150%;
+ 	color: #000;
+ }
+
+ #reveal h1, h2, h3 {
+ 	letter-spacing: 0 !important;
+	font-weight: bold !important;
+ }
+
+ #reveal .agendaTemplateList {
+ 	color: #888;
+ }

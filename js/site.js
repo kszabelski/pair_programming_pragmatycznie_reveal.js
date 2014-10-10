@@ -6,7 +6,7 @@ $(".document").ready(function(){
 		var agendaTemplate = $("#agendaTemplate").clone();
 		agendaTemplate.prop({ id: "agenda" + emphasizeElement});
 
-		$("." + emphasizeElement, agendaTemplate).css("font-weight", "bold");
+		$("." + emphasizeElement, agendaTemplate).addClass("emphasizedElement");
 		agendaTemplate.appendTo(agendaPlaceholder).show();
 	})
 })

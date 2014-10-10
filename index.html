@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/site.css">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -37,7 +38,7 @@
 </head>
 
 <body>
-    <div class="reveal">
+    <div id="reveal" class="reveal">
 
         <!-- Any section element inside of this container is displayed as a slide -->
 
@@ -374,11 +375,11 @@
         </div>
     </div>
 
-    <div id="agendaTemplate" style="display:none">
+    <div id="agendaTemplate" style="display: none;">
     	<h2>Jak nam idzie?</h2>
-    	<ul>
-    		<li class="theory">
-    			Trochę teorii
+    	<ul class="agendaTemplateList">
+    		<li>
+    			<span class="theory">Trochę teorii</span>
     			<ul>
     				<li>Historia Extreme Programming</li>
     				<li>Teoria o korzyściach z Pair Programmingu</li>
