@@ -1,752 +1,516 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="stylesheet" href="css/presentation.css">
-	<link rel="stylesheet" href="css/reveal.min.css">
-	<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-	<!-- For syntax highlighting -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-	<script>
-	if( window.location.search.match( /print-pdf/gi ) ) {
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = 'css/print/pdf.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
-	}
-	</script>
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
 
-	<body>
-		<div class="reveal">
+<body>
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
+        <!-- Any section element inside of this container is displayed as a slide -->
 
-	<div class="slides">
-	    <section>
-            <h1>Pair Programming <br/>pragmatycznie</h1>
+        <div class="slides">
+            <style type="text/css">
+                .text-small {
+                    font-size: 75% !important;
+                }
 
-	        <div style="margin-top:3em"></div>
-	        <div class="left">
-        		Krzysztof Szabelski<br/>
-				<span class="text-small">Technical Consultant w Future Processing</span>
-	        </div>
-	        <div style="margin-top:1em"></div>
-            <div class="text-small left">
-            	<a href="mailto:kszabelski@future-processing.com">kszabelski@future-processing.com</a> / <a href="kszabelski@gmail.com">kszabelski@gmail.com<a/><br/>
-            	<a href="http://krzysztofszabelski.com">http://krzysztofszabelski.com</a><br/>
-            	<a href="https://twitter.com/kszabelski">@kszabelski</a>
-            </div>
-	    </section>
+                .left {
+                    text-align: left;
+                }
+            </style>
 
-	    <section>
-	        <div>
-	             <h2>
-	             	Dlaczego ja?<br>
-	                Dlaczego Pair Programming?
-	             </h2>
-	        <div>
+            <section>
+                <h1>Pair Programming <br />pragmatycznie</h1>
+
+                <div style="margin-top:3em"></div>
+                <div class="left">
+                    Krzysztof Szabelski<br />
+                    <span class="text-small">Technical Consultant w Future Processing</span>
+                </div>
+                <div style="margin-top:1em"></div>
+                <div class="text-small left">
+                    <a href="mailto:kszabelski@future-processing.com">kszabelski@future-processing.com</a> &#47; <a href="kszabelski@gmail.com">kszabelski@gmail.com</a><br />
+                    <a href="http://krzysztofszabelski.com">http://krzysztofszabelski.com</a><br />
+                    <a href="https://twitter.com/kszabelski">@kszabelski</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Dlaczego ja?<br>
+                    Dlaczego Pair Programming?
+                </h2>
                 <ul>
                     <li>Stosuje jako doradca techniczny</li>
                     <li>Polecam</li>
                     <li>Obserwuje, analizuje, wnioskuje</li>
                 </ul>
-	        </div>
-	    </section>
+            </section>
 
-	    <style>
-	    	.goals h3 { 
-			
-	    	} 
-	    	.goals p {
-	    		font-size: 80%;
-	    	}
-	    </style>
+            <style>
+                .goals h3 {
+                }
 
-	    <section class="goals">
-	        <h1>Pair Programming</h1>
-	        <p class="fragment" data-fragment-index="0">pomaga osiagnąć</p>
-            <h3 class="fragment" data-fragment-index="1">Rozwiązania wysokiej jakości</h3>
-			<h3 class="fragment" data-fragment-index="2">Bardziej kompetentny zespół</h3>
-	        <h3 class="fragment" data-fragment-index="3">Brak silosów wiedzy</h3>
-			<p class="fragment" data-fragment-index="4">a przez to</p>
-	        <h3 class=" fragment" data-fragment-index="5">Działające i potrzebne klientowi oprogramowanie na czas</h3>
-	    </section>
+                .goals p {
+                    font-size: 80%;
+                }
+            </style>
 
-	    <section>
-	        <div  >
-	            <div >
-	                <h2>Plan na dzisiaj</h2>
-	            </div>
-	        </div>
-	        <div  >
-	            <div >
-	                <ul>
-	                    <li class="fragment" data-fragment-index="0">
-	                        Trochę teorii
-	                        <ul>
-	                            <li>Historia Extreme Programming</li>
-	                            <li>Teoria o korzyściach z Pair Programmingu</li>
-	                            <li>Badania naukowe</li>
-	                        </ul>
-	                    </li>
-	                    <li class="fragment" data-fragment-index="1">
-	                        Trochę praktyki
-	                        <ul>
-	                            <li>
-	                                Rodzaje pracy w parach
-	                                <ul>
-	                                    <li>Klasycznie</li>
-	                                    <li>Mentoring</li>
-	                                    <li>Pair sitting</li>
-	                                </ul>
-	                            </li>
-	                            <li>Problemy implementacyjne</li>
-	                            <li>Rozwiązania</li>
-	                        </ul>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-	    </section><section class="stack">
-	        <section>
-	            <div  >
-	                <div   >
-	                    <h2>Gdzie jesteśmy</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li class="fragment" data-fragment-index="0">
-	                            Trochę teorii
-	                            <ul>
-	                                <li>Historia Extreme Programming</li>
-	                                <li>Teoria o korzyściach z Pair Programmingu</li>
-	                                <li>Badania naukowe</li>
-	                            </ul>
-	                        </li>
-	                        <li class="fragment" data-fragment-index="1">
-	                            Trochę praktyki
-	                            <ul>
-	                                <li>
-	                                    Rodzaje pracy w parach
-	                                    <ul>
-	                                        <li>Klasycznie</li>
-	                                        <li>Mentoring</li>
-	                                        <li>Pair sitting</li>
-	                                    </ul>
-	                                </li>
-	                                <li>Problemy implementacyjne</li>
-	                                <li>Rozwiązania</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 80px; top: 202px;"><div  data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"  ><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2><strong>Extreme Programming</strong></h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li>
-	                            <p>„Extreme Programming Explained”, Kent Beck, 1999, 2004</p>
-	                        </li>
-	                        <li>
-	                            <p>Projekt C3 w Chrysler</p>
-	                        </li>
-	                        <li>
-	                            <p>WikiWikiWeb at c2.com by Ward Cunningham</p>
-	                        </li>
-	                        <li>
-	                            <p>„Traditional software engineering practices taken to "extreme" levels”</p>
+            <section class="goals">
+                <h1>Pair Programming</h1>
+                <p class="fragment" data-fragment-index="0">pomaga osiagnąć</p>
+                <h3 class="fragment" data-fragment-index="1">Rozwiązania wysokiej jakości</h3>
+                <h3 class="fragment" data-fragment-index="2">Bardziej kompetentny zespół</h3>
+                <h3 class="fragment" data-fragment-index="3">Brak silosów wiedzy</h3>
+                <p class="fragment" data-fragment-index="4">a przez to</p>
+                <h3 class=" fragment" data-fragment-index="5">Działające i potrzebne klientowi oprogramowanie na czas</h3>
+            </section>
 
-	                            <p> </p>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2>
-	                        <strong>Pair</strong><strong> Programming - teoria</strong>
-	                    </h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li>Dwie osoby, w tym samym czasie, przy jednej maszynie, pracują nad jednym zadaniem. </li>
-	                        <li>Co tu dużo tłumaczyć?</li>
-	                        <li>
-	                            Ale po co?<br>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2>
-	                        <strong>Pair</strong><strong> Programming - teoria</strong>
-	                    </h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li>Dwie połówki mózgu</li>
-	                        <li>Aspekty: low level i high level</li>
-	                        <li>
-	                            Analogie: adwokat, koszykarz, polskie mądrości ludowe.<br>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section><section>
-	            <div  >
-	                <div >
-	                    <h2>Analogia</h2>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="image" style="width: 800px; height: 450px; left: 79px; top: 140px;"><div ><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/708182/maxresdefault.jpg" style="visibility: visible;" data-natural-width="1280" data-natural-height="720"></div></div>
-	        </section><section>
-	            <div  >
-	                <div >
-	                    <h2>Mądrość ludowa</h2>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="image" style="width: 510.669975186104px; height: 490px; left: 228px; top: 140px;"><div ><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/708184/codwie.jpeg" data-natural-width="420" data-natural-height="403" style="visibility: visible;"></div></div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2><strong>Badania naukowe</strong></h2>
-	                </div>
-	            </div>
-	            <div style="width: 348px; left: 80px; top: 241px; height: auto;">
-	                <div   >
-	                    <ul>
-	                        <li>Multum!</li>
-	                        <li>Najczęściej cytowane: </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div style="width: 670px; left: 80px; top: 490px; height: auto;">
-	                <div   >
-	                    <ul>
-	                        <li>
-	                            Duża rozbieżność, mała powtarzalność.<br>
-	                            Każdy dowodzi to co chce.
-	                        </li>
-	                        <li>„Cannot measure productivity” - Martin Fowler</li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <blockquote>
-	                        <p>Pairs spend about 15% more time on programs than individuals. However, the resulting code has about 15% fewer defects</p>
-	                    </blockquote>
-	                </div>
-	            </div>
-	        </section>
-	    </section><section class="stack">
-	        <section>
-	            <div  >
-	                <div   >
-	                    <h2>Plan na dzisiaj</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li class="fragment" data-fragment-index="0">
-	                            Trochę teorii
-	                            <ul>
-	                                <li>Historia Extreme Programming</li>
-	                                <li>Teoria o korzyściach z Pair Programmingu</li>
-	                                <li>Badania naukowe</li>
-	                            </ul>
-	                        </li>
-	                        <li class="fragment" data-fragment-index="1">
-	                            Trochę praktyki
-	                            <ul>
-	                                <li>
-	                                    Rodzaje pracy w parach
-	                                    <ul>
-	                                        <li>Klasycznie</li>
-	                                        <li>Mentoring</li>
-	                                        <li>Pair sitting</li>
-	                                    </ul>
-	                                </li>
-	                                <li>Problemy implementacyjne</li>
-	                                <li>Rozwiązania</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 103px; top: 417px;"><div  data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"  ><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
-	        </section><section>
-	            <div  >
-	                <div >
-	                    <h2><span style="color:rgb(255, 255, 255); text-align:left">Klasyczny Pair Programming</span></h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div >
-	                    <ul>
-	                        <li>Lepsza jakość rozwiązań</li>
-	                        <li>Wymagane zaangażowanie i dyscyplina</li>
-	                        <li>Trudne problemy?</li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2>Plan na dzisiaj</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li class="fragment" data-fragment-index="0">
-	                            Trochę teorii
-	                            <ul>
-	                                <li>Historia Extreme Programming</li>
-	                                <li>Teoria o korzyściach z Pair Programmingu</li>
-	                                <li>Badania naukowe</li>
-	                            </ul>
-	                        </li>
-	                        <li class="fragment" data-fragment-index="1">
-	                            Trochę praktyki
-	                            <ul>
-	                                <li>
-	                                    Rodzaje pracy w parach
-	                                    <ul>
-	                                        <li>Klasycznie</li>
-	                                        <li>Mentoring</li>
-	                                        <li>Pair sitting</li>
-	                                    </ul>
-	                                </li>
-	                                <li>Problemy implementacyjne</li>
-	                                <li>Rozwiązania</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 103px; top: 456px;"><div  data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"  ><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
-	        </section><section>
-	            <div  >
-	                <div >
-	                    <h2>
-	                        Mentoring przez<br>
-	                        Pair Programming
-	                    </h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div >
-	                    <ul>
-	                        <li>Różnica w celu</li>
-	                        <li>Różnica w implementacji</li>
-	                        <li>Trudna rola mentora</li>
-	                        <li>
-	                            Czy to się opłaca<br>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2>Plan na dzisiaj</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li class="fragment" data-fragment-index="0">
-	                            Trochę teorii
-	                            <ul>
-	                                <li>Historia Extreme Programming</li>
-	                                <li>Teoria o korzyściach z Pair Programmingu</li>
-	                                <li>Badania naukowe</li>
-	                            </ul>
-	                        </li>
-	                        <li class="fragment" data-fragment-index="1">
-	                            Trochę praktyki
-	                            <ul>
-	                                <li>
-	                                    Rodzaje pracy w parach
-	                                    <ul>
-	                                        <li>Klasycznie</li>
-	                                        <li>Mentoring</li>
-	                                        <li>Pair sitting</li>
-	                                    </ul>
-	                                </li>
-	                                <li>Problemy implementacyjne</li>
-	                                <li>Rozwiązania</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 103px; top: 495px;"><div  data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"  ><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
-	        </section><section>
-	            <div  >
-	                <div   >
-	                    <h2>
-	                        Pair Sitting / Quick Help<br>
-	                    </h2>
-	                </div>
-	            </div>
-	            <div style="width: 480px; left: 80px; top: 350px; height: auto;">
-	                <div   >
-	                    <ul>
-	                        <li>„Attention span”</li>
-	                        <li>Kiedy to działa a kiedy nie</li>
-	                        <li>Przypadki użycia: Quick hepl, Pair debugging</li>
-	                        <li>Przede wszystkim nie szkodzić</li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 317.647058823529px; left: 560px; top: 280px;"><div   ><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/709227/ancient-aliens-invisible-something-meme-generator-my-attention-span-this-long-2f7513.jpg" style="visibility: visible;" data-natural-width="510" data-natural-height="450"></div></div>
-	        </section>
-	    </section><section class="stack">
-	        <section>
-	            <div  >
-	                <div   >
-	                    <h2>Plan na dzisiaj</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li class="fragment" data-fragment-index="0">
-	                            Trochę teorii
-	                            <ul>
-	                                <li>Historia Extreme Programming</li>
-	                                <li>Teoria o korzyściach z Pair Programmingu</li>
-	                                <li>Badania naukowe</li>
-	                            </ul>
-	                        </li>
-	                        <li class="fragment" data-fragment-index="1">
-	                            Trochę praktyki
-	                            <ul>
-	                                <li>
-	                                    Rodzaje pracy w parach
-	                                    <ul>
-	                                        <li>Klasycznie</li>
-	                                        <li>Mentoring</li>
-	                                        <li>Pair sitting</li>
-	                                    </ul>
-	                                </li>
-	                                <li>Problemy implementacyjne</li>
-	                                <li>Rozwiązania</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 59px; top: 541px;"><div  data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"  ><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
-	        </section><section>
-	            <div  >
-	                <div >
-	                    <h2>Przeszkody w osiąganiu korzyści</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div >
-	                    <ul>
-	                        <li>
-	                            Naruszenie strefy intymnej
-	                            <ul>
-	                                <li>Społeczna</li>
-	                                <li>Geekowa</li>
-	                            </ul>
-	                        </li>
-	                        <li>Niewystarczająca koncentracja</li>
-	                        <li>Brak przekonania o słuszności</li>
-	                        <li>
-	                            Nieodpowiednie taski
-	                            <ul>
-	                                <li>Pair documentation reading</li>
-	                                <li>Późne dołączanie</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section>
-	    </section><section class="stack">
-	        <section>
-	            <div  >
-	                <div   >
-	                    <h2>Plan na dzisiaj</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div   >
-	                    <ul>
-	                        <li class="fragment" data-fragment-index="0">
-	                            Trochę teorii
-	                            <ul>
-	                                <li>Historia Extreme Programming</li>
-	                                <li>Teoria o korzyściach z Pair Programmingu</li>
-	                                <li>Badania naukowe</li>
-	                            </ul>
-	                        </li>
-	                        <li class="fragment" data-fragment-index="1">
-	                            Trochę praktyki
-	                            <ul>
-	                                <li>
-	                                    Rodzaje pracy w parach
-	                                    <ul>
-	                                        <li>Klasycznie</li>
-	                                        <li>Mentoring</li>
-	                                        <li>Pair sitting</li>
-	                                    </ul>
-	                                </li>
-	                                <li>Problemy implementacyjne</li>
-	                                <li>Rozwiązania</li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	            <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 59px; top: 580px;"><div  data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"  ><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
-	        </section><section>
-	            <div  >
-	                <div >
-	                    <h2>Rozwiązania</h2>
-	                </div>
-	            </div>
-	            <div  >
-	                <div >
-	                    <ul>
-	                        <li>
-	                            Zaplanuj sesję:
-	                            <ul>
-	                                <li>Nad czym będziemy pracować,</li>
-	                                <li>Kiedy będziemy to robić.</li>
-	                            </ul>
-	                        </li>
-	                        <li>
-	                            Kontrakt:
-	                            <ul>
-	                                <li>Polityka zmian przy klawiaturze</li>
-	                                <li>Kiedy przerwy</li>
-	                                <li>
-	                                    Kiedy ucinamy pracę<br>
-	                                </li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </section>
-	    </section><section>
-	        <div  >
-	            <div >
-	                <h2>Kończymy </h2>
-	            </div>
-	        </div>
-	        <div  >
-	            <div >
-	                <ul>
-	                    <li>
-	                        Tworzenie rozwiązania wysokiej jakości 
-	                        <ul>
-	                            <li>Klasyczny Pair Programming</li>
-	                        </ul>
-	                    </li>
-	                    <li>
-	                        Podnoszenie kompetencji zespołu
-	                        <ul>
-	                            <li>Mentoring przez programowanie w parach</li>
-	                        </ul>
-	                    </li>
-	                    <li>
-	                        Likwidowanie silosów wiedzy
-	                        <ul>
-	                            <li>Mentoring i Quick Help, jako lekarstwo</li>
-	                            <li>
-	                                Klasyczny Pair Programming, jako metoda unikania<br>
-	                            </li>
-	                        </ul>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-	    </section><section>
-	        <div  >
-	            <div >
-	                <h2>... pozdrów jeszcze ciocię, babcie, ściskam</h2>
-	            </div>
-	        </div>
-	        <div  >
-	            <div >
-	                <ul>
-	                    <li>
-	                        <p>Pamiętajcie: to nie daje wzrostu szybkości, ale jakości.</p>
-	                    </li>
-	                    <li>
-	                        <p>
-	                            Powodzenia<br>
-	                            … i zapraszam na wspólną sesję Pair Programmingu
-	                        </p>
+            <section>
+                <h2>Plan na dzisiaj</h2>
+                <ul>
+                    <li class="fragment" data-fragment-index="0">
+                        Trochę teorii
+                        <ul>
+                            <li>Historia Extreme Programming</li>
+                            <li>Teoria o korzyściach z Pair Programmingu</li>
+                            <li>Badania naukowe</li>
+                        </ul>
+                    </li>
+                    <li class="fragment" data-fragment-index="1">
+                        Trochę praktyki
+                        <ul>
+                            <li>
+                                Rodzaje pracy w parach
+                                <ul>
+                                    <li>Klasycznie</li>
+                                    <li>Mentoring</li>
+                                    <li>Pair sitting</li>
+                                </ul>
+                            </li>
+                            <li>Problemy implementacyjne</li>
+                            <li>Rozwiązania</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-	                        <p> </p>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-	    </section><section>
-	        <div  >
-	            <div   >
-	                <h2><strong>Linki</strong></h2>
-	            </div>
-	        </div>
-	        <div  >
-	            <div  style="font-size: 57%;">
-	                <ul>
-	                    <li>
-	                        <p>“Extreme Programming Explained: Embrace Change, 2nd Edition”, Kent Beck, 2004</p>
-	                    </li>
-	                    <li>
-	                        <p>“Extreme Programming Refactored: The Case Against XP” Matt Stephens, Doug Rosenberg, 2003</p>
-	                    </li>
-	                    <li>
-	                        <p>http://en.wikipedia.org/wiki/Pair_programming</p>
-	                    </li>
-	                    <li>
-	                        <p>http://en.wikipedia.org/wiki/Extreme_programming</p>
-	                    </li>
-	                    <li>
-	                        <p>http://c2.com/cgi/wiki?PairProgramming</p>
-	                    </li>
-	                    <li>
-	                        <p>http://c2.com/cgi/wiki?ExtremeProgrammingPractices</p>
-	                    </li>
-	                    <li>
-	                        <p>http://alistair.cockburn.us/Costs+and+benefits+of+pair+programming</p>
-	                    </li>
-	                    <li>
-	                        <p>http://martinfowler.com/bliki/PairProgrammingMisconceptions.html</p>
-	                    </li>
-	                    <li>
-	                        <p>http://www.cs.put.poznan.pl/jnawrocki/publica/05LNCS3792.pdf</p>
-	                    </li>
-	                    <li>
-	                        <p>http://www.infoq.com/articles/adopting-pair-programming</p>
-	                    </li>
-	                    <li>
-	                        <p>http://martinfowler.com/bliki/CannotMeasureProductivity.html</p>
-	                    </li>
-	                    <li>
-	                        <p>http://butunclebob.com/ArticleS.UncleBob.P2M2 </p>
+            <section class="stack">
+                <section>
+                    <h2>Gdzie jesteśmy</h2>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">
+                            Trochę teorii
+                            <ul>
+                                <li>Historia Extreme Programming</li>
+                                <li>Teoria o korzyściach z Pair Programmingu</li>
+                                <li>Badania naukowe</li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="1">
+                            Trochę praktyki
+                            <ul>
+                                <li>
+                                    Rodzaje pracy w parach
+                                    <ul>
+                                        <li>Klasycznie</li>
+                                        <li>Mentoring</li>
+                                        <li>Pair sitting</li>
+                                    </ul>
+                                </li>
+                                <li>Problemy implementacyjne</li>
+                                <li>Rozwiązania</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 80px; top: 202px;"><div data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
+                </section>
 
-	                        <p> </p>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-	    </section><section>
-	        <div  >
-	            <div   >
-	                <h1>Dzięki! Pytania?</h1>
-	            </div>
-	        </div>
-	        <div style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 86px; top: 381px;">
-	            <div   >
-	                <p style="text-align:left">Krzysztof Szabelski</p>
-	            </div>
-	        </div>
-	        <div style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 86px; top: 467px;">
-	            <div  style="font-size: 75%;">
-	                <p style="text-align:left">kszabelski@future-processing.com</p>
+                <section>
+                    <h2>Extreme Programming</h2>
+                    <ul>
+                        <li>„Extreme Programming Explained”, Kent Beck, 1999, 2004</li>
+                        <li>Projekt C3 w Chrysler</li>
+                        <li>WikiWikiWeb at c2.com by Ward Cunningham</li>
+                        <li>„Traditional software engineering practices taken to "extreme" levels”</li>
+                    </ul>
+                </section>
 
-	                <p style="text-align:left">kszabelski@gmail.com</p>
+                <section>
+                    <h2>Pair Programming - teoria</h2>
+                    <ul>
+                        <li>Dwie osoby, w tym samym czasie, przy jednej maszynie, pracują nad jednym zadaniem. </li>
+                        <li>Co tu dużo tłumaczyć?</li>
+                        <li>Ale po co?</li>
+                    </ul>
+                </section>
 
-	                <p style="text-align:left">http://krzysztofszabelski.com</p>
+                <section>
+                    <h2>Pair Programming - teoria</h2>
+                    <ul>
+                        <li>Dwie połówki mózgu</li>
+                        <li>Aspekty: low level i high level</li>
+                        <li>Analogie: adwokat, koszykarz, polskie mądrości ludowe.</li>
+                    </ul>
+                </section>
 
-	                <p style="text-align:left">@kszabelski</p>
-	            </div>
-	        </div>
-	        <div style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 86px; top: 420px;">
-	            <div  style="font-size: 70%;">
-	                <p style="text-align: left;"><span style="text-align:left">Technical Consultant w Future Processing</span></p>
-	            </div>
-	        </div>
-	    </section>
+                <section>
+                    <h2>Analogia</h2>
+                    <div class="sl-block" data-block-type="image" style="width: 800px; height: 450px; left: 79px; top: 140px;"><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/708182/maxresdefault.jpg" style="visibility: visible;" data-natural-width="1280" data-natural-height="720"></div>
+                </section>
 
+                <section>
+                    <h2>Mądrość ludowa</h2>
+                    <div class="sl-block" data-block-type="image" style="width: 510.669975186104px; height: 490px; left: 228px; top: 140px;"><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/708184/codwie.jpeg" data-natural-width="420" data-natural-height="403" style="visibility: visible;"></div>
+                </section>
 
+                <section>
+                    <h2>Badania naukowe</h2>
+                    <ul>
+                        <li>Multum!</li>
+                        <li>Najczęściej cytowane: </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Duża rozbieżność, mała powtarzalność.<br>
+                            Każdy dowodzi to co chce.
+                        </li>
+                        <li>„Cannot measure productivity” - Martin Fowler</li>
+                    </ul>
 
-</div>
+                    <blockquote>
+                        <p>Pairs spend about 15% more time on programs than individuals. However, the resulting code has about 15% fewer defects</p>
+                    </blockquote>
+                </section>
+            </section>
 
-</div>
+            <section class="stack">
+                <section>
+                    <h2>Plan na dzisiaj</h2>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">
+                            Trochę teorii
+                            <ul>
+                                <li>Historia Extreme Programming</li>
+                                <li>Teoria o korzyściach z Pair Programmingu</li>
+                                <li>Badania naukowe</li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="1">
+                            Trochę praktyki
+                            <ul>
+                                <li>
+                                    Rodzaje pracy w parach
+                                    <ul>
+                                        <li>Klasycznie</li>
+                                        <li>Mentoring</li>
+                                        <li>Pair sitting</li>
+                                    </ul>
+                                </li>
+                                <li>Problemy implementacyjne</li>
+                                <li>Rozwiązania</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 103px; top: 417px;"><div data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
+                </section>
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.min.js"></script>
+                <section>
+                    <h2>Klasyczny Pair Programming</h2>
+                    <ul>
+                        <li>Lepsza jakość rozwiązań</li>
+                        <li>Wymagane zaangażowanie i dyscyplina</li>
+                        <li>Trudne problemy?</li>
+                    </ul>
+                </section>
 
-<script>
+                <section>
+                    <h2>Plan na dzisiaj</h2>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">
+                            Trochę teorii
+                            <ul>
+                                <li>Historia Extreme Programming</li>
+                                <li>Teoria o korzyściach z Pair Programmingu</li>
+                                <li>Badania naukowe</li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="1">
+                            Trochę praktyki
+                            <ul>
+                                <li>
+                                    Rodzaje pracy w parach
+                                    <ul>
+                                        <li>Klasycznie</li>
+                                        <li>Mentoring</li>
+                                        <li>Pair sitting</li>
+                                    </ul>
+                                </li>
+                                <li>Problemy implementacyjne</li>
+                                <li>Rozwiązania</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 103px; top: 456px;"><div data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
+                </section>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                <section>
+                    <h2>
+                        Mentoring przez<br>
+                        Pair Programming
+                    </h2>
+                    <ul>
+                        <li>Różnica w celu</li>
+                        <li>Różnica w implementacji</li>
+                        <li>Trudna rola mentora</li>
+                        <li>
+                            Czy to się opłaca<br>
+                        </li>
+                    </ul>
+                </section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                <section>
+                    <h2>Plan na dzisiaj</h2>
+                    <ul>
+                        <li class="fragment" data-fragment-index="0">
+                            Trochę teorii
+                            <ul>
+                                <li>Historia Extreme Programming</li>
+                                <li>Teoria o korzyściach z Pair Programmingu</li>
+                                <li>Badania naukowe</li>
+                            </ul>
+                        </li>
+                        <li class="fragment" data-fragment-index="1">
+                            Trochę praktyki
+                            <ul>
+                                <li>
+                                    Rodzaje pracy w parach
+                                    <ul>
+                                        <li>Klasycznie</li>
+                                        <li>Mentoring</li>
+                                        <li>Pair sitting</li>
+                                    </ul>
+                                </li>
+                                <li>Problemy implementacyjne</li>
+                                <li>Rozwiązania</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 103px; top: 495px;"><div data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
+                </section>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+                <section>
+                    <h2>Pair Sitting / Quick Help</h2>
+                    <ul>
+                        <li>„Attention span”</li>
+                        <li>Kiedy to działa a kiedy nie</li>
+                        <li>Przypadki użycia: Quick hepl, Pair debugging</li>
+                        <li>Przede wszystkim nie szkodzić</li>
+                    </ul>
+                    <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 317.647058823529px; left: 560px; top: 280px;"><div><img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/709227/ancient-aliens-invisible-something-meme-generator-my-attention-span-this-long-2f7513.jpg" style="visibility: visible;" data-natural-width="510" data-natural-height="450"></div></div>
+                </section>
+            </section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+            <section class="stack">
+                <section>
+                    <h2>Plan na dzisiaj</h2>
+                    <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 59px; top: 541px;"><div data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
+                </section>
 
-</script>
+                <section>
+                    <h2>Przeszkody w osiąganiu korzyści</h2>
+                    <ul>
+                        <li>
+                            Naruszenie strefy intymnej
+                            <ul>
+                                <li>Społeczna</li>
+                                <li>Geekowa</li>
+                            </ul>
+                        </li>
+                        <li>Niewystarczająca koncentracja</li>
+                        <li>Brak przekonania o słuszności</li>
+                        <li>
+                            Nieodpowiednie taski
+                            <ul>
+                                <li>Pair documentation reading</li>
+                                <li>Późne dołączanie</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="stack">
+                <section>
+
+                    <h2>Plan na dzisiaj</h2>
+                    <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 160px; height: 90px; left: 59px; top: 580px;"><div data-shape-type="arrow-right" data-shape-fill-color="rgb(55, 139, 101)" data-shape-stretch="false"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="xMidYMid" viewbox="0 0 90 90"><polygon points="0,27 45,27 45,0 90,45 45,90 45,62.99999999999999 0,62.99999999999999" class="shape-element" fill="rgb(55, 139, 101)"></polygon></svg></div></div>
+                </section>
+
+                <section>
+                    <h2>Rozwiązania</h2>
+                    <ul>
+                        <li>
+                            Zaplanuj sesję:
+                            <ul>
+                                <li>Nad czym będziemy pracować,</li>
+                                <li>Kiedy będziemy to robić.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Kontrakt:
+                            <ul>
+                                <li>Polityka zmian przy klawiaturze</li>
+                                <li>Kiedy przerwy</li>
+                                <li>
+                                    Kiedy ucinamy pracę<br>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <h2>Kończymy </h2>
+                <ul>
+                    <li>
+                        Tworzenie rozwiązania wysokiej jakości 
+                        <ul>
+                            <li>Klasyczny Pair Programming</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Podnoszenie kompetencji zespołu
+                        <ul>
+                            <li>Mentoring przez programowanie w parach</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Likwidowanie silosów wiedzy
+                        <ul>
+                            <li>Mentoring i Quick Help, jako lekarstwo</li>
+                            <li>
+                                Klasyczny Pair Programming, jako metoda unikania<br>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>... pozdrów jeszcze ciocię, babcie, ściskam</h2>
+                <ul>
+                    <li>
+                        Pamiętajcie: to nie daje wzrostu szybkości, ale jakości.
+                    </li>
+                    <li>
+                        Powodzenia<br>
+                        … i zapraszam na wspólną sesję Pair Programmingu
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+
+                <h2>Linki</h2>
+                <div style="font-size: 57%;">
+                    <ul>
+                        <li>“Extreme Programming Explained: Embrace Change, 2nd Edition”, Kent Beck, 2004</li>
+                        <li>“Extreme Programming Refactored: The Case Against XP” Matt Stephens, Doug Rosenberg, 2003</li>
+                        <li>http://en.wikipedia.org/wiki/Pair_programming</li>
+                        <li>http://en.wikipedia.org/wiki/Extreme_programming</li>
+                        <li>http://c2.com/cgi/wiki?PairProgramming</li>
+                        <li>http://c2.com/cgi/wiki?ExtremeProgrammingPractices</li>
+                        <li>http://alistair.cockburn.us/Costs+and+benefits+of+pair+programming</li>
+                        <li>http://martinfowler.com/bliki/PairProgrammingMisconceptions.html</li>
+                        <li>http://www.cs.put.poznan.pl/jnawrocki/publica/05LNCS3792.pdf</li>
+                        <li>http://www.infoq.com/articles/adopting-pair-programming</li>
+                        <li>http://martinfowler.com/bliki/CannotMeasureProductivity.html</li>
+                        <li>http://butunclebob.com/ArticleS.UncleBob.P2M2</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h1>Dzięki! Pytania?</h1>
+                <div style="margin-top:3em"></div>
+                <div class="left">
+                    Krzysztof Szabelski<br />
+                    <span class="text-small">Technical Consultant w Future Processing</span>
+                </div>
+                <div style="margin-top:1em"></div>
+                <div class="text-small left">
+                    <a href="mailto:kszabelski@future-processing.com">kszabelski@future-processing.com</a> / <a href="kszabelski@gmail.com">kszabelski@gmail.com</a><br />
+                    <a href="http://krzysztofszabelski.com">http://krzysztofszabelski.com</a><br />
+                    <a href="https://twitter.com/kszabelski">@kszabelski</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+            { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
 
 </body>
 </html>
