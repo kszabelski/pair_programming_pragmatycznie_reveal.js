@@ -30,7 +30,6 @@
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <div id="reveal" class="reveal">
         <div class="slides">
@@ -50,26 +49,22 @@
                 </div>
             </section>
 
-            <section>
-                <h2>
-                    Dlaczego ja?<br>
-                    Dlaczego Pair Programming?
-                </h2>
-                <ul>
-                    <li>Stosuje jako doradca techniczny</li>
-                    <li>Polecam</li>
-                    <li>Obserwuje, analizuje, wnioskuje</li>
-                </ul>
-            </section>
-
             <section class="goals">
                 <h1>Pair Programming</h1>
-                <p class="fragment" data-fragment-index="0">pomaga osiagnąć</p>
-                <h3 class="fragment" data-fragment-index="1">Rozwiązania wysokiej jakości</h3>
-                <h3 class="fragment" data-fragment-index="2">Bardziej kompetentny zespół</h3>
-                <h3 class="fragment" data-fragment-index="3">Brak silosów wiedzy</h3>
-                <p class="fragment" data-fragment-index="4">a przez to</p>
-                <h3 class=" fragment" data-fragment-index="5">Działające i potrzebne klientowi oprogramowanie na czas</h3>
+                <p class="fragment" data-fragment-index="1">pomaga stworzyć</p>
+                <h3 class=" fragment" data-fragment-index="1">Działające i potrzebne klientowi oprogramowanie na czas</h3>
+                <p class="fragment" data-fragment-index="2">poprzez wspieranie celów pośrednich</p>
+                <h3 class="fragment" data-fragment-index="3">Tworzenie oprogramowania lepszej jakości</h3>
+                <h3 class="fragment" data-fragment-index="4">Podnoszenie kompetencji zespołu</h3>
+                <h3 class="fragment" data-fragment-index="5">Likwidowanie silosów wiedzy</h3>
+                <aside class="notes">
+                    <ul>
+                        <li>Moda na odwracanie wszystkiego, zatem zacznijmy od podsumowania</li>
+                        <li>Pytanie: razie jaki jest cel zespołu programistycznego</li>
+                        <li>Moja wersja celu - czy się zgadzacie?</li>
+                        <li>Postawienie tezy</li>
+                    </ul>
+                </aside>
             </section>
 
             <section>
@@ -79,7 +74,7 @@
                         Trochę teorii
                         <ul>
                             <li class="fragment" data-fragment-index="1">Historia Extreme Programming</li>
-                            <li class="fragment" data-fragment-index="2">Teoria o korzyściach z Pair Programmingu</li>
+                            <li class="fragment" data-fragment-index="2">Pair Programming w teorii</li>
                             <li class="fragment" data-fragment-index="3">Badania naukowe</li>
                         </ul>
                     </li>
@@ -101,7 +96,7 @@
                 </ul>
             </section>
 
-            <section class="stack">
+            <section class="stack" data-transition="none">
                 <section>
                     <div class="agendaPlaceholder" data-emphasize-element="theory" data-arrow-top="74px"></div>
                 </section>
@@ -112,31 +107,38 @@
                         <li class="fragment" data-fragment-index="1">„Extreme Programming Explained”, Kent Beck, 1999, 2004</li>
                         <li class="fragment" data-fragment-index="2">Projekt C3 w Chrysler</li>
                         <li class="fragment" data-fragment-index="3">WikiWikiWeb at c2.com by Ward Cunningham</li>
-                        <li class="fragment" data-fragment-index="4">„Traditional software engineering practices<br/>taken to <u>extreme</u> levels”</li>
+                        <li class="fragment" data-fragment-index="4">Extreme Programming - zbiór najlepszych praktyk programistycznych, zastosowanych na <u>ekstremalnym</u> poziomie</li>
                     </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Pair programming jest jedną z praktyk metodyki Extreme Programmming, opisana w książce</li>
+                        <li>1996r specjalista od Smalltalka w firmie Crysler - wdrażanie praktyk</li>
+                        <li>C3 - pole doświadczalne, ale źródło XP w społeczności</li>
+                        <li>„zobaczymy co się stanie, lecimy z tymi technikami w do extremum</li>
+                    </ul>
+                </aside>
+                </section>
+
+                <section>
+                    <h2>Pair Programming</h2>
+                    <div  class="left">
+                        <ul>
+                            <li class="fragment" data-fragment-index="1">Dwie osoby, w tym samym czasie, przy jednej maszynie, pracują nad jednym zadaniem. </li>
+                        </ul>
+                        <div style="margin-top:1em"></div>
+                        <ul>
+                            <li class="fragment" data-fragment-index="2">Jaki to ma sens?</li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section>
                     <h2>Pair Programming - teoria</h2>
                     <ul>
-                        <li class="fragment" data-fragment-index="1">Dwie osoby, w tym samym czasie, przy jednej maszynie, pracują nad jednym zadaniem. </li>
-                        <li class="fragment" data-fragment-index="2">Co tu dużo tłumaczyć?</li>
-                        <li class="fragment" data-fragment-index="3">Ale po co?</li>
+                        <li class="fragment" data-fragment-index="1">Dwie półkule mózgu</li>
+                        <li class="fragment" data-fragment-index="2">"Driver" używa lewej, "Navigator" prawej.</li>
+                        <li class="fragment" data-fragment-index="3">Analogie</li>
                     </ul>
-                </section>
-
-                <section>
-                    <h2>Pair Programming - teoria</h2>
-                    <ul>
-                        <li>Dwie połówki mózgu</li>
-                        <li>Aspekty: low level i high level</li>
-                        <li>Analogie</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Analogia</h2>
-                    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/708182/maxresdefault.jpg"/>
                 </section>
 
                 <section>
@@ -156,8 +158,7 @@
                         </blockquote>
                         <ul>
                             <li class="fragment" data-fragment-index="4">
-                                Duża rozbieżność, mała powtarzalność.<br>
-                                Każdy dowodzi to co chce.
+                                Duża rozbieżność, mała powtarzalność
                             </li>
                             <li class="fragment" data-fragment-index="5">„Cannot measure productivity” - Martin Fowler</li>
                         </ul>
@@ -178,8 +179,16 @@
                     <ul>
                         <li class="fragment" data-fragment-index="1">Cel: Lepsza jakość rozwiązań</li>
                         <li class="fragment" data-fragment-index="2">Trudne problemy (?)</li>
-                        <li class="fragment" data-fragment-index="3">Niezbędne zaangazowanie i dyscyplina w roli nawigatora</li>
+                        <li class="fragment" data-fragment-index="3">Trudna rola nawigatora</li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>to co pierwsze przychodzi do głowy na hasło pair programming</li>
+                            <li>pracy sprzyja powstawaniu lepszej jakości rozwiązań</li>
+                            <li>idealnie do rozwiązywania złożonych problemów wymagających szerokiego spojrzenia</li>
+                            <li>Nie jeśli trudność polega zrozumienia nowych rzeczy</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -196,6 +205,14 @@
                         <li class="fragment" data-fragment-index="2">Trudna rola mentora</li>
                         <li class="fragment" data-fragment-index="3">Czy to się opłaca?</li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Podstawową różnica miedzy klasyczną technika a mentoringiem jest cel</li>
+                            <li>jedna osoba przez całą sesję pełni rolę "mentora" a druga „nowicjusza”</li>
+                            <li>różnica w sposobie pracy</li>
+                            <li>Uwaga na syndrom „ja ci pokażę”. </li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -205,13 +222,21 @@
                 <section>
                     <h2>Pair Sitting</h2>
                     <ul>
-                        <li class="fragment" data-fragment-index="1">Szybka pomoc, Pair debugging</li>
+                        <li class="fragment" data-fragment-index="1">Dobra technika na szybką pomoc</li>
                         <li class="fragment" data-fragment-index="2">„Attention span”</li>
                     </ul>
                     <img  class="fragment" data-fragment-index="3" src="https://s3.amazonaws.com/media-p.slid.es/uploads/krzysiekszabelski/images/709227/ancient-aliens-invisible-something-meme-generator-my-attention-span-this-long-2f7513.jpg"></img>
                     <ul>
                         <li class="fragment" data-fragment-index="4">Przede wszystkim nie szkodzić</li>
                     </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>W odróżnieniu od Pair Programmingu,tylko jedna osoba programuje</li>
+                            <li>Nierozwiązywalne problemy, a szybka pomoc.</li>
+                            <li>To działa i jest godne polecenia pod warunkiem ograniczenia czasowego</li>
+                            <li>Attention span</li>
+                        </ul>
+                    </aside>
                 </section>
             </section>
 
@@ -230,8 +255,8 @@
                                 <li class="fragment" data-fragment-index="3">Geekowa</li>
                             </ul>
                         </li>
-                        <li class="fragment" data-fragment-index="4">Niewystarczająca koncentracja</li>
-                        <li class="fragment" data-fragment-index="5">Brak przekonania o słuszności, brak zaangażowania i dyscypliny</li>
+                        <li class="fragment" data-fragment-index="4">Zbyt spersonalizowane środowisko</li>
+                        <li class="fragment" data-fragment-index="5">Brak przekonania o słuszności</li>
                     </ul>
                 </section>
             </section>
@@ -283,7 +308,7 @@
                     <li class="fragment" data-fragment-index="5">
                         Likwidowanie silosów wiedzy
                         <ul>
-                            <li class="fragment" data-fragment-index="7">Mentoring i Quick Help, jako lekarstwo</li>
+                            <li class="fragment" data-fragment-index="7">Mentoring i Pair Sitting, jako lekarstwo</li>
                             <li class="fragment" data-fragment-index="8">Klasyczny Pair Programming, jako metoda unikania</li>
                         </ul>
                     </li>
@@ -292,14 +317,12 @@
 
             <section>
                 <h2>... pozdrów jeszcze ciocię, babcie, ściskam</h2>
-                <ul>
-                    <li class="fragment" data-fragment-index="1">
-                        Pamiętajcie: to nie daje wzrostu szybkości, ale jakości.
-                    </li>
-                    <li class="fragment" data-fragment-index="2">Powodzenia!</li>
-                </ul>
+                
+                <div style="margin-top:2em"></div>
+                <h3 class="fragment" data-fragment-index="2">Powodzenia!</h3>
+                
                 <div style="margin-top:1em"></div>
-                <div class="fragment" data-fragment-index="3">… i zapraszam na wspólną sesję Pair Programmingu.</div>
+                <h3 class="fragment" data-fragment-index="3">… i zapraszam na wspólną sesję Pair Programmingu.</h3>
 
             </section>
 
@@ -336,6 +359,11 @@
                     <a href="http://krzysztofszabelski.com" target="_blank">http://krzysztofszabelski.com</a><br />
                     <a href="https://twitter.com/kszabelski" target="_blank">@kszabelski</a>
                 </div>
+
+                <div style="margin-top:1em"></div>
+                <div class="text-small" style="font-weight:bold;">
+                <a href="http://krzysztofszabelski.com/talks/pair-programming-pragmatycznie">http://krzysztofszabelski.com/talks/pair-programming-
+                pragmatycznie</a></div>
             </section>
         </div>
     </div>
@@ -347,7 +375,7 @@
     			<span class="theory">Trochę teorii</span>
     			<ul>
     				<li>Historia Extreme Programming</li>
-    				<li>Teoria o korzyściach z Pair Programmingu</li>
+    				<li>Pair Programmingu w teorii</li>
     				<li>Badania naukowe</li>
     			</ul>
     		</li>
@@ -355,7 +383,7 @@
     			<span class="practice">Więcej praktyki</span>
     			<ul>
     				<li>
-    					Rodzaje pracy w parach
+    					<span class="classicalPairProgramming"> Rodzaje pracy w parach</span>
     					<ul>
     						<li class="classicalPairProgramming">Klasycznie</li>
     						<li class="mentoring">Mentoring</li>

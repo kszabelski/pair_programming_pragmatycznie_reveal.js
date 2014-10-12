@@ -1,8 +1,8 @@
-.text-small {
+#reveal .text-small {
     font-size: 75% !important;
 }
 
-.left {
+#reveal .left {
     text-align: left;
 }
 
